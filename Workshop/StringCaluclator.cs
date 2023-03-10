@@ -15,6 +15,8 @@ namespace Workshop
 
             char? customSeparator = str.StartsWith("//") && str[3] == '\n' ? str[2] : null;
 
+
+
             var split = customSeparator.HasValue ?
                 str.Substring(4).Split(',', '\n', customSeparator.Value) :
                 str.Split(',', '\n');
