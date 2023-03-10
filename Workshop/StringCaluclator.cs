@@ -10,7 +10,7 @@ namespace Workshop
     {
         public static int Calculate(string str)
         {
-            if (string.IsNullOrEmpty(str))
+            //if (string.IsNullOrEmpty(str))
                 return 0;
 
             char? customSeparator = str.StartsWith("//") && str[3] == '\n' ? str[2] : null;
